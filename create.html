@@ -1,0 +1,105 @@
+<!DOCTYPE html><!-- Header file content -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Books manager</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">myBooks</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add new book+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Show Books</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+	<main>
+	    <section class="container mt-5 mb-5">
+	        <h2 class="mb-5">Add New Book</h2>
+	        <!-- Alert -->
+	        <div class="alert alert-success alert-dismissible fade show" role="alert">
+	            <strong>Data is saved seccessfuly 
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	                <span aria-hidden="true">&times;</span>
+	            </button>
+	        </div>
+	        <!-- End Alert -->
+	        <form method="post">
+	            <div class="form-row">
+	                <div class="form-group col-md-6">
+	                    <label for="bname">Name</label>
+	                    <input type="text" class="form-control" id="bname" name="name" placeholder="Name">
+	                </div>
+	                <div class="form-group col-md-6">
+	                    <label for="author_name">Author Name</label>
+	                    <input type="text" class="form-control" id="author_name" name="authorname" placeholder="Author Name">
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <label for="isbn">Isbn</label>
+	                <input type="text" class="form-control" id="isbn" name="isbn" placeholder="ISBN ex: 978-9953-68-866-4">
+	            </div>
+	            <div class="form-group">
+	                <label for="genres">Book Genres</label>
+	                <select name="genres" id="genres" class="custom-select">
+	                    <option selected>Choose...</option>
+	                    <option value="Action and adventure">Action and adventure</option>
+	                    <option value="Children's">Children's</option>
+	                    <option value="Drama">Drama</option>
+	                    <option value="Fantasy">Fantasy</option>
+	                    <option value="Romance">Romance</option>
+	                    <option value="Art">Art</option>
+	                    <option value="Diary">Diary</option>
+	                    <option value="Biography">Biography</option>
+	                    <option value="History">History</option>
+	                    <option value="Math">Math</option>
+	                    <option value="Science">Science</option>
+	                    <option value="Self help">Self help</option>
+	                    <option value="Travel">Travel</option>
+	                    <option value="Health">Health</option>
+	                    <option value="Cookbook">Cookbook</option>
+	                    <option value="Journal">Journal</option>
+	                    <option value="Poetry">Poetry</option>
+	                    <option value="Political">Political</option>
+	                </select>
+	            </div>
+	            <div class="form-group">
+	                <label for="address">Price</label>
+	                <input type="text" class="form-control" id="price" name="price" placeholder="Price($) ex: 5">
+	            </div>
+	            <button type="submit" name="submit" class="btn btn-primary">Add New Book</button>
+	        </form>
+	    </section>
+	</main>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="container">
+            <p>Created By: <a href="http://www.twitter.com/algorizmie">@Zakaria</a></p>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html><!-- End Footer -->

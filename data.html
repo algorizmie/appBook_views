@@ -1,0 +1,92 @@
+<!DOCTYPE html><!-- Header file content -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Books manager</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">myBooks</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add new book+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Show Books</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <main>   
+        <section class="container mt-5 mb-5">
+            <h1 class="mb-5">Table of Books</h1>
+            <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author Name</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Genres</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8</td>
+                    <td>Crud system in php</td>
+                    <td>Zakaria</td>
+                    <td>908-5877-54-45</td>
+                    <td>Science</td>
+                    <td>20</td>
+                    <td>
+                        <a href="/books/data.php?id=8" class="btn btn-danger">Delete</a>
+                        <a href="/books/update.php?id=8" class="btn btn-success">Update</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Learn python in 1 min</td>
+                    <td>Mr Tweety</td>
+                    <td>400-5877-20-45</td>
+                    <td>Science</td>
+                    <td>20</td>
+                    <td>
+                        <a href="/books/data.php?id=9" class="btn btn-danger">Delete</a>
+                        <a href="/books/update.php?id=9" class="btn btn-success">Update</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <!-- @if no data -->
+            <p>There is no Data</p>
+            <!-- @endif -->
+        </section>
+    </main>
+    <!-- Footer  -->
+    <footer>
+        <div class="container">
+            <p>Created By: <a href="http://www.twitter.com/algorizmie">@Zakaria</a></p>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html><!-- End Footer -->
